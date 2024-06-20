@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./dropdown.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./footer.css">
+    <script src="./mobile.js" defer></script>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <header id="main-header">
+        <div id="logo"><a href="/">RockPaperScissors</a></div>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="/">Home</a></li>
+
+                <!-- <li><a href="/">Signup</a></li>
+                <li><a href="/">Login</a></li> -->
+
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <li><a href="/">Signup</a></li>
+                        <li><a href="/">Login</a></li>
+                    </div>
+                  </div>
+            </ul>
+        </nav>
+        <button id="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <aside id="mobile-menu">
+        <nav>
+            <ul class="nav-items">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Signup</a></li>
+                <li><a href="/">Login</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>Let's play Rock-Paper-Scissors!</h1>
+        <div class="div-img">
+            <img  src="./images/mainimg/cartoon-rock-paper-scissors.jpg">
+        </div>
+
+        <div id="result">
+            <ul class="res-img" id="res-img"></ul>
+            <h2 id="winner"></h2>
+
+        </div>
+        
+        <ul >
+            <li class="ul-img"><button class="btn" id="rock-btn"><img class="img-btn" id="rock" src="./images/rock.png" alt="rock"></button></li>
+            <li class="ul-img"><button class="btn" id="paper-btn"><img class="img-btn" id="paper" src="./images/paper.png" alt="paper"></button></li>
+            <li class="ul-img"><button class="btn" id="scissors-btn"><img class="img-btn" id="scissors" src="./images/scissors.png" alt="scissors"></button></li>
+        </ul>
+        <form id="summary">
+            <label class="label">TIMES</label>
+            <input type="text" id="times" placeholder="0">
+            <label class="label">WINS</label>
+            <input type="text" id="wins" placeholder="0">
+        </form>
+        <h3>Select the button above to start the game!</h3>
+
+
+    </main>
+    
+</body>
+
+<footer>
+    <ul>
+        <li>
+            <a href="https://www.instagram.com/">
+                <img src="/images/icons/insta.png" alt="Instagram logo">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/">
+                <img src="/images/icons/facebook.png" alt="Facebook logo">
+            </a>
+        </li>
+    </ul>
+</footer>
+
+</html>

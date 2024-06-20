@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Class Example</title>
+  <style>
+    /* 基本样式 */
+    #menu {
+      display: none;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+    /* 当 'show' 类存在时的样式 */
+    #menu.show {
+      display: block;
+    }
+    /* 当 'open' 类存在时的样式 */
+    #menu.open {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <button id="toggle-show-button">Toggle Show</button>
+  <button id="toggle-open-button">Toggle Open</button>
+  <div id="menu">This is the menu.</div>
+
+  <script>
+    // 获取按钮和菜单元素
+    const menuElement = document.getElementById('menu');
+    const toggleShowButton = document.getElementById('toggle-show-button');
+    const toggleOpenButton = document.getElementById('toggle-open-button');
+
+    // 切换 'show' 类
+    toggleShowButton.addEventListener('click', () => {
+      menuElement.classList.toggle('show');
+    });
+
+    // 切换 'open' 类
+    toggleOpenButton.addEventListener('click', () => {
+      menuElement.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
